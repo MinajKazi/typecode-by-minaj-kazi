@@ -8,6 +8,6 @@ export const initSocket = async () => {
         transports: ['websocket'],
     };
     //need to replace this process.env.REACT_APP_BACKEND_URL with "http://localhost:5000" to run on local machine
-    return io("http://13.115.115.94/:5000", options);
+    return io("http://localhost:5000", options);
     // return io("/", options);
 };
